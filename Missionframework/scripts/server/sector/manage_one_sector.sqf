@@ -252,7 +252,7 @@ if ((!(_sector in blufor_sectors)) && (([markerPos _sector, [_opforcount] call K
 
             _stopit = true;
 
-            {[_x] spawn prisonner_ai;} forEach ((markerPos _sector) nearEntities [["Man"], _local_capture_size * 1.2]);
+            {[_x] spawn prisonner_ai;} forEach ((markerPos _sector) nearEntities [["CAManBase"], _local_capture_size * 1.2]);
 
             sleep 60;
 
