@@ -22,8 +22,9 @@ if ((_unit isKindOf "Man") && (alive _unit) && (side group _unit == GRLIB_side_e
         _unit removeItem "NVGoggles_INDEP";
         _unit setUnitPos "UP";
         sleep 1;
-        private _grp = createGroup [GRLIB_side_civilian, true];
-        [_unit] joinSilent _grp;
+        // Don't join different side, since players get punished for surrendered enemies that die
+        // private _grp = createGroup [GRLIB_side_civilian, true];
+        // [_unit] joinSilent _grp;
         if (KP_liberation_ace) then {
             ["ace_captives_setSurrendered", [_unit, true], _unit] call CBA_fnc_targetEvent;
         } else {
