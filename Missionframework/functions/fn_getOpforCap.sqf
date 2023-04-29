@@ -15,4 +15,4 @@
         Total opfor units [NUMBER]
 */
 
-GRLIB_side_enemy countSide allUnits
+count (units GRLIB_side_enemy)
