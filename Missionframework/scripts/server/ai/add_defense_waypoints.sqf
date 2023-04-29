@@ -26,16 +26,21 @@ if (_is_infantry) then {
     _waypoint setWaypointCombatMode "YELLOW";
     _waypoint setWaypointSpeed "LIMITED";
     _waypoint setWaypointCompletionRadius 10;
+    _waypoint setWaypointTimeout [3, 6, 9];
 
     _waypoint = _grp addWaypoint [_wpPositions select 1, 10];
     _waypoint setWaypointType "MOVE";
+    _waypoint setWaypointTimeout [3, 6, 9];
     _waypoint = _grp addWaypoint [_wpPositions select 2, 10];
     _waypoint setWaypointType "MOVE";
+    _waypoint setWaypointTimeout [3, 6, 9];
     _waypoint = _grp addWaypoint [_wpPositions select 3, 10];
     _waypoint setWaypointType "MOVE";
+    _waypoint setWaypointTimeout [3, 6, 9];
 
     _waypoint = _grp addWaypoint [_wpPositions select 4, 10];
     _waypoint setWaypointType "CYCLE";
+    _waypoint setWaypointTimeout [3, 6, 9];
 } else {
     _waypoint = _grp addWaypoint [_basepos, 1];
     _waypoint setWaypointType "MOVE";
