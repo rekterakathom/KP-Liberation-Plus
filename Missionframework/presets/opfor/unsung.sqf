@@ -142,3 +142,8 @@ opfor_air = [
     "uns_Mig21_CAP",                                                    // Mig-21 Fishbed F (CAP)
     "uns_Mig21_CAS"                                                     // Mig-21 Fishbed F (CAS)
 ];
+
+// Enemy AA turrets that will be spawned in the back country
+KPLIB_o_turretsAA = [
+	["O_SAM_System_04_F", "O_Radar_System_02_F"]
+];

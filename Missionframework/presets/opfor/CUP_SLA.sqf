@@ -167,3 +167,8 @@ opfor_air = [
     "CUP_O_Su25_Dyn_SLA",                                                   // Su-25 Frogfoot
     "CUP_O_SU34_SLA"                                                        // Su-34
 ];
+
+// Enemy AA turrets that will be spawned in the back country
+KPLIB_o_turretsAA = [
+	["O_SAM_System_04_F", "O_Radar_System_02_F"]
+];

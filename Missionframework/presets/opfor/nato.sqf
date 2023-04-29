@@ -147,3 +147,8 @@ opfor_air = [
     "B_Plane_CAS_01_dynamicLoadout_F",                                  // A-10D Thunderbolt II (CAS)
     "B_Plane_Fighter_01_F"                                              // F/A-181 Black Wasp II
 ];
+
+// Enemy AA turrets that will be spawned in the back country
+KPLIB_o_turretsAA = [
+	["O_SAM_System_04_F", "O_Radar_System_02_F"]
+];

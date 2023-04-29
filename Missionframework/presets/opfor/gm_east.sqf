@@ -135,3 +135,8 @@ opfor_choppers = [
 opfor_air = [
     "len_l39_nva"                                                       // Aero L-39
 ];
+
+// Enemy AA turrets that will be spawned in the back country
+KPLIB_o_turretsAA = [
+	["O_SAM_System_04_F", "O_Radar_System_02_F"]
+];

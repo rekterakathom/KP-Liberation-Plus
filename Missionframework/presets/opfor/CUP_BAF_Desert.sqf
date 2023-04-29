@@ -167,3 +167,8 @@ opfor_air = [
     "CUP_B_F35B_Stealth_BAF",                                           // F-35B Lightning II (Stealth)
     "CUP_B_GR9_DYN_GB"                                                  // Harrier GR.9
 ];
+
+// Enemy AA turrets that will be spawned in the back country
+KPLIB_o_turretsAA = [
+	["O_SAM_System_04_F", "O_Radar_System_02_F"]
+];

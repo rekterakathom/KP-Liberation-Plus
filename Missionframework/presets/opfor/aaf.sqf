@@ -164,3 +164,8 @@ opfor_air = [
     "I_Plane_Fighter_03_dynamicLoadout_F",                              // L-159
     "I_Plane_Fighter_04_F"                                              // Gripen
 ];
+
+// Enemy AA turrets that will be spawned in the back country
+KPLIB_o_turretsAA = [
+	["O_SAM_System_04_F", "O_Radar_System_02_F"]
+];
