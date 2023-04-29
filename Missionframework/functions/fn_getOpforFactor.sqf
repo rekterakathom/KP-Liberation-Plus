@@ -17,6 +17,6 @@
 
 if !(GRLIB_adaptive_opfor) exitWith {1};
 
-private _bluforcount = (0.2 * (GRLIB_side_friendly countSide allUnits)) + ([] call KPLIB_fnc_getPlayerCount);
+private _bluforcount = (0.2 * (count (units GRLIB_side_friendly))) + ([] call KPLIB_fnc_getPlayerCount);
 
 (0.5 + (_bluforcount / 25.0)) min 1
