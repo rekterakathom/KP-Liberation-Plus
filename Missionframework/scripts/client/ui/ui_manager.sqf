@@ -144,9 +144,10 @@ while {true} do {
 
                 "zone_capture" setmarkerposlocal (markerpos _nearest_active_sector);
                 _colorzone = "ColorGrey";
-                if ( [ markerpos _nearest_active_sector, _zone_size ] call KPLIB_fnc_getSectorOwnership == GRLIB_side_friendly ) then { _colorzone = GRLIB_color_friendly };
-                if ( [ markerpos _nearest_active_sector, _zone_size ] call KPLIB_fnc_getSectorOwnership == GRLIB_side_enemy ) then { _colorzone = GRLIB_color_enemy };
-                if ( [ markerpos _nearest_active_sector, _zone_size ] call KPLIB_fnc_getSectorOwnership == GRLIB_side_resistance ) then { _colorzone = "ColorCivilian" };
+                private _sectorOwner = [markerPos _nearest_active_sector, _zone_size] call KPLIB_fnc_getSectorOwnership;
+                if ( _sectorOwner == GRLIB_side_friendly ) then { _colorzone = GRLIB_color_friendly };
+                if ( _sectorOwner == GRLIB_side_enemy ) then { _colorzone = GRLIB_color_enemy };
+                if ( _sectorOwner == GRLIB_side_resistance ) then { _colorzone = "ColorCivilian" };
                 "zone_capture" setmarkercolorlocal _colorzone;
 
                 _ratio = [_nearest_active_sector] call KPLIB_fnc_getBluforRatio;
