@@ -8,7 +8,9 @@ private _list = _basePos nearObjects ["House", 125];
 private _wpPositions = [];
 _list = _list call BIS_fnc_arrayShuffle; // Shuffle the array because nearObjects isn't random
 {
+    if !(alive _x) then {continue}; // No destroyed buildings
     if (count (_x buildingPos -1) > 0) then {
+        // Convert to ASL because precise waypoint placement wants ASL instead of AGL
 	    _wpPositions pushBack (AGLtoASL (selectRandom (_x buildingPos -1)));
     };
 } forEach _list;
