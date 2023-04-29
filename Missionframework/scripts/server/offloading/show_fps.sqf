@@ -40,10 +40,10 @@ while {true} do {
     private _localgroups = {local _x} count allGroups;
     private _localunits = {local _x} count allUnits;
 
-    _myfpsmarker setMarkerColor "ColorGREEN";
-    if (_myfps < 30) then {_myfpsmarker setMarkerColor "ColorYELLOW";};
-    if (_myfps < 20) then {_myfpsmarker setMarkerColor "ColorORANGE";};
-    if (_myfps < 10) then {_myfpsmarker setMarkerColor GRLIB_color_enemy_bright;};
+    _myfpsmarker setMarkerColorLocal "ColorGREEN";
+    if (_myfps < 30) then {_myfpsmarker setMarkerColorLocal "ColorYELLOW";};
+    if (_myfps < 20) then {_myfpsmarker setMarkerColorLocal "ColorORANGE";};
+    if (_myfps < 10) then {_myfpsmarker setMarkerColorLocal GRLIB_color_enemy_bright;};
 
     _myfpsmarker setMarkerText format ["%1: %2 fps, %3 local groups, %4 local units", _sourcestr, (round (_myfps * 100.0)) / 100.0, _localgroups, _localunits];
 
