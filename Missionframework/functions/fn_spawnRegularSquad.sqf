@@ -30,7 +30,7 @@ private _i = 0;
 while {_spawnPos isEqualTo []} do {
     _i = _i + 1;
     _spawnPos = (_sectorPos getPos [random 50, random 360]) findEmptyPosition [5, 100, "B_Heli_Light_01_F"];
-    if (_i isEqualTo 10) exitWith {};
+    if (_i isEqualTo 10) exitWith {_spawnPos = (_sectorPos getPos [random 50, random 360]) findEmptyPosition [0, 100, "B_Heli_Light_01_F"];};
 };
 
 if (_spawnPos isEqualTo zeroPos) exitWith {
