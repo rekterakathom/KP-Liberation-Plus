@@ -188,6 +188,7 @@ GRLIB_arsenal_magazines = [
     "vn_mg42_50_mag",
     "vn_mg42_50_t_mag",
     "vn_mk1_udg_mag",
+    "vn_l34a1_smg_mag",
     "vn_mpu_mag",
     "vn_mpu_t_mag",
     "vn_svd_mag",

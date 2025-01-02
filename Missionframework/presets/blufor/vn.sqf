@@ -376,8 +376,8 @@ blufor_squad_para = [
 */
 elite_vehicles = [
     "vn_b_air_f4c_at",                                  // F-4C Phantom II (AT)
-    "vn_b_air_f4c_cas",,                                // F-4C Phantom II (CAS)
+    "vn_b_air_f4c_cas",                                 // F-4C Phantom II (CAS)
     "vn_b_air_f4c_cap",                                 // F-4C Phantom II (CAP)
     "vn_b_armor_m48_01_01",                             // M48A3 Patton
-    "vn_b_armor_m67_01_01",                             // M67A2 Flame Tank
+    "vn_b_armor_m67_01_01"                              // M67A2 Flame Tank
 ];
