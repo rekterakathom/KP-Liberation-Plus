@@ -134,7 +134,10 @@ KP_liberation_preset_blufor = 0;
 17 = CUP Armed Forces of the Russian Federation (Modern MSV)
 18 = CUP Chernarus Defense Force
 19 = CUP British Armed Forces (Desert)
-20 = CUP British Armed Forces (Woodland) */
+20 = CUP British Armed Forces (Woodland)
+21 = 3CB Takistan Army
+22 = 3CB ChDKZ
+ */
 KP_liberation_preset_opfor = 0;
 
 /* Resistance preset:
@@ -146,7 +149,10 @@ KP_liberation_preset_opfor = 0;
 5  = Germany (Global Mobilization)
 6  = Unsung
 7  = CUP Takistani Locals
-8  = CUP National Party of Chernarus */
+8  = CUP National Party of Chernarus 
+9  = 3CB Takistan Fighters
+10 = 3CB NAPA
+*/
 KP_liberation_preset_resistance = 0;
 
 /* Civilians preset:
@@ -157,7 +163,10 @@ KP_liberation_preset_resistance = 0;
 4  = Germany (Global Mobilization)
 5  = Unsung
 6  = CUP Takistani Civilians
-7  = CUP Chernarussian Civilians */
+7  = CUP Chernarussian Civilians 
+8  = 3CB Takistani Civilians
+9  = 3CB Chernarussian Civilians
+*/
 KP_liberation_preset_civilians = 0;
 
 /* Which arsenal preset should be used?
