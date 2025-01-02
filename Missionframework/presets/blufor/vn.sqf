@@ -82,7 +82,9 @@ light_vehicles = [
 ];
 
 heavy_vehicles = [
-    ["vn_b_armor_m41_01_01",300,100,150]                                // M41A3 Walker Bulldog
+    ["vn_b_armor_m41_01_01",300,100,150],                               // M41A3 Walker Bulldog
+    ["vn_b_armor_m48_01_01",300,100,150],                               // M48A3 Patton
+    ["vn_b_armor_m67_01_01",300,100,250]                                // M67A2 Flame Tank
 ];
 
 air_vehicles = [
@@ -102,6 +104,8 @@ air_vehicles = [
     ["vn_b_air_ah1gd_05",500,400,200],                                  // AH-1G Cobra (FAC)
     ["vn_b_air_ah1g_01",500,400,200],                                   // AH-1G Cobra (FFAR)
     ["vn_b_air_uh1d_01_01",250,0,150],                                  // UH-1D Iroquois (Dust Off) MedEvac
+    ["vn_b_air_ach47_01_01",300,300,200],                               // ACH-47 Guns-A-Go-Go (M200)
+    ["vn_b_air_ach47_05_01",300,300,200],                               // ACH-47 Guns-A-Go-Go (Cannon)
     ["vn_b_air_f4c_at",1250,1250,450],                                  // F-4C Phantom II (AT)
     ["vn_b_air_f4c_cas",1250,1250,450],                                 // F-4C Phantom II (CAS)
     ["vn_b_air_f4c_cap",1250,1250,450]                                  // F-4C Phantom II (CAP)
@@ -370,4 +374,10 @@ blufor_squad_para = [
     Classnames below have to be unlocked by capturing military bases.
     Which base locks a vehicle is randomized on the first start of the campaign.
 */
-elite_vehicles = [];
+elite_vehicles = [
+    "vn_b_air_f4c_at",                                  // F-4C Phantom II (AT)
+    "vn_b_air_f4c_cas",,                                // F-4C Phantom II (CAS)
+    "vn_b_air_f4c_cap",                                 // F-4C Phantom II (CAP)
+    "vn_b_armor_m48_01_01",                             // M48A3 Patton
+    "vn_b_armor_m67_01_01",                             // M67A2 Flame Tank
+];

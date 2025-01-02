@@ -41,5 +41,12 @@ civilians = [
 // Civilian vehicle classnames.
 civilian_vehicles = [
     "vn_c_bicycle_01",
-    "vn_c_bicycle_02"
+    "vn_c_bicycle_02",
+    "vn_c_car_01_01",
+    "vn_c_car_03_01",
+    "vn_c_car_02_01",
+    "vn_c_wheeled_m151_02",
+    "vn_c_wheeled_m151_01",
+    "vn_c_car_01_02",
+    "vn_c_car_04_01"
 ];

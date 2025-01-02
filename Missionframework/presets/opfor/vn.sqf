@@ -64,7 +64,8 @@ militia_squad = [
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders. Can also be empty for only infantry milita.
 militia_vehicles = [
-    "vn_o_wheeled_btr40_mg_01"
+    "vn_o_wheeled_btr40_mg_01",
+    "vn_o_wheeled_btr40_mg_04"
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols at high enemy combat readiness (aggression levels).
@@ -74,14 +75,20 @@ opfor_vehicles = [
     "vn_o_wheeled_btr40_mg_02",
     "vn_o_wheeled_btr40_mg_01",
     "vn_o_wheeled_btr40_mg_03",
-    "vn_o_armor_type63_01_nva65"
+    "vn_o_armor_m113_acav_01",
+    "vn_o_armor_m113_acav_03",
+    "vn_o_armor_type63_01_nva65",
+    "vn_o_armor_pt76a_01",
+    "vn_o_armor_pt76b_01",
+    "vn_o_armor_t54b_01"
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols but at a lower enemy combat readiness (aggression levels).
 opfor_vehicles_low_intensity = [
     "vn_o_wheeled_z157_mg_01",
     "vn_o_wheeled_btr40_mg_01",
-    "vn_o_wheeled_btr40_mg_02"
+    "vn_o_wheeled_btr40_mg_02",
+    "vn_o_armor_m113_acav_03"
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
@@ -92,14 +99,21 @@ opfor_battlegroup_vehicles = [
     "vn_o_wheeled_btr40_mg_02",
     "vn_o_wheeled_btr40_mg_01",
     "vn_o_wheeled_btr40_mg_03",
-    "vn_o_armor_type63_01_nva65"
+    "vn_o_armor_m113_acav_01",
+    "vn_o_armor_m113_acav_03",
+    "vn_o_armor_type63_01_nva65",
+    "vn_o_armor_pt76a_01",
+    "vn_o_armor_pt76b_01",
+    "vn_o_armor_t54b_01"
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
 opfor_battlegroup_vehicles_low_intensity = [
     "vn_o_wheeled_z157_mg_01",
     "vn_o_wheeled_btr40_mg_02",
-    "vn_o_wheeled_btr40_mg_01"
+    "vn_o_wheeled_btr40_mg_01",
+    "vn_o_armor_m113_acav_03",
+    "vn_o_armor_type63_01_nva65"
 ];
 
 /* All vehicles that spawn within battlegroups (see the above 2 arrays) and also hold 8 soldiers as passengers.
@@ -123,4 +137,15 @@ opfor_choppers = [
 
 // Enemy fixed-wings that will need to spawn in the air.
 opfor_air = [
+    "vn_o_air_mig19_cas",
+    "vn_o_air_mig19_gun",
+    "vn_o_air_mig21_cas",
+    "vn_o_air_mig21_gun"
+];
+
+// Enemy AA turrets that will be spawned in the back country
+KPLIB_o_turretsAA = [
+	["vn_o_wheeled_z157_mg_02"],
+    ["vn_o_nva_static_zpu4"],
+    ["vn_o_armor_btr50pk_02"]
 ];
