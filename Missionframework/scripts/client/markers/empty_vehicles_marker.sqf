@@ -23,7 +23,7 @@ while { true } do {
 
     _markedveh = [];
     {
-        if (alive _x && (toLower (typeof _x)) in _vehtomark && (count (crew _x)) == 0 && (_x distance2d startbase) > 500) then {
+        if (alive _x && (count (crew _x)) == 0 && {(_x distance2d startbase) > 500 && (toLower (typeof _x)) in _vehtomark}) then {
             _markedveh pushback _x;
         };
     } foreach vehicles;
@@ -43,7 +43,7 @@ while { true } do {
 
     {
         _marker = _vehmarkers select (_markedveh find _x);
-        _marker setMarkerPosLocal getpos _x;
+        _marker setMarkerPosLocal (getPosASL _x);
         _marker setMarkerTextLocal  (getText (_cfg >> typeOf _x >> "displayName"));
 
     } foreach _markedveh;
