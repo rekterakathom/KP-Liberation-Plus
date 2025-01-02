@@ -616,7 +616,8 @@ GRLIB_arsenal_items = [
     "vn_type56_v_03",
 
     // ACE Items
-    "ACE_acc_pointer_green",                                        // Laser Pointer (green)
+    "ACE_Canteen",
+    "ACE_PlottingBoard",
     "ACE_adenosine",                                                // Adenosine autoinjector
     "ACE_Altimeter",                                                // Altimeter Watch
     "ACE_artilleryTable",                                           // Artillery Rangetable
@@ -627,13 +628,10 @@ GRLIB_arsenal_items = [
     "ACE_bloodIV",                                                  // Blood IV (1000 ml)
     "ACE_bodyBag",                                                  // Bodybag
     "ACE_CableTie",                                                 // Cable Tie
-    "ACE_Cellphone",                                                // Cellphone
     "ACE_Chemlight_Shield",                                         // Chemlight Shield (Empty)
     "ACE_Clacker",                                                  // M57 Firing Device
-    "ACE_DAGR",                                                     // DAGR
     "ACE_DeadManSwitch",                                            // Dead Man's Switch
     "ACE_DefusalKit",                                               // Defusal Kit
-    "ace_dragon_sight",                                             // SU-36/P Daysight
     "ACE_EarPlugs",                                                 // Earplugs
     "ACE_elasticBandage",                                           // Bandage (Elastic)
     "ACE_EntrenchingTool",                                          // Entrenching Tool
@@ -643,12 +641,8 @@ GRLIB_arsenal_items = [
     "ACE_Flashlight_Maglite_ML300L",                                // Maglite ML300L
     "ACE_Flashlight_MX991",                                         // Fulton MX-991
     "ACE_Flashlight_XL50",                                          // Maglite XL50
-    "ACE_HuntIR_monitor",                                           // HuntIR monitor
-    "ACE_IR_Strobe_Item",                                           // IR Strobe
-    "ACE_Kestrel4500",                                              // Kestrel 4500NV
     "ACE_M26_Clacker",                                              // M152 Firing Device
     "ACE_MapTools",                                                 // Map Tools
-    "ACE_microDAGR",                                                // MicroDAGR GPS
     "ACE_morphine",                                                 // Morphine autoinjector
     "ACE_muzzle_mzls_338",                                          // Flash Suppressor (.338)
     "ACE_muzzle_mzls_93mmg",                                        // Flash Suppressor (9.3 mm)
@@ -657,10 +651,6 @@ GRLIB_arsenal_items = [
     "ACE_muzzle_mzls_smg_01",                                       // FLash Suppressor (.45 ACP)
     "ACE_muzzle_mzls_smg_02",                                       // Flash Suppressor (9 mm)
     "ACE_MX2A",                                                     // MX-2A
-    "ACE_NVG_Gen1",                                                 // NV Goggles (Gen1)
-    "ACE_NVG_Gen2",                                                 // NV Goggles (Gen2)
-    "ACE_NVG_Gen4",                                                 // NV Goggles (Gen4)
-    "ACE_NVG_Wide",                                                 // NV Goggles (Wide)
     "ACE_packingBandage",                                           // Bandage (Packing)
     "ACE_personalAidKit",                                           // Personal Aid Kit
     "ACE_plasmaIV_250",                                             // Plasma IV (250 ml)
@@ -687,13 +677,9 @@ GRLIB_arsenal_items = [
     "ACE_surgicalKit",                                              // Surgical Kit
     "ACE_tourniquet",                                               // Tourniquet (CAT)
     "ACE_Tripod",                                                   // SSWT Kit
-    "ACE_UAVBattery",                                               // UAV Battery
-    "ACE_Vector",                                                   // Vector 21 Nite
-    "ACE_VectorDay",                                                // Vector 21
     "ACE_VMH3",                                                     // VMH3
     "ACE_VMM3",                                                     // VMM3
     "ACE_wirecutter",                                               // Wirecutter
-    "ACE_Yardage450",                                               // Yardage 450
 
     // ACRE Items
     "ACRE_PRC117F",                                                 // AN/PRC-117F
