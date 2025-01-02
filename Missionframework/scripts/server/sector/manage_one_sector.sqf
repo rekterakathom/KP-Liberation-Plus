@@ -186,7 +186,7 @@ if ((!(_sector in blufor_sectors)) && (([markerPos _sector, [_opforcount] call K
         _allbuildings = (nearestObjects [_sectorpos, ["House"], _building_range]) select {alive _x};
         _buildingpositions = [];
         {
-            _buildingpositions = _buildingpositions + ([_x] call BIS_fnc_buildingPositions);
+            _buildingpositions append (_x buildingPos -1);
         } forEach _allbuildings;
         if (KP_liberation_sectorspawn_debug > 0) then {[format ["Sector %1 (%2) - manage_one_sector found %3 building positions", (markerText _sector), _sector, (count _buildingpositions)], "SECTORSPAWN"] remoteExecCall ["KPLIB_fnc_log", 2];};
         if (count _buildingpositions > _minimum_building_positions) then {
