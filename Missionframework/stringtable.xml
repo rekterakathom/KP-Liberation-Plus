@@ -931,6 +931,9 @@
             <Korean>거점 점령</Korean>
             <Czech>SEKTOR ZABRÁN</Czech>
         </Key>
+        <Key ID="STR_NOTIFICATION_CIVILIANKILLED_TITLE">
+            <Original>CIVILIAN KILLED</Original>
+        </Key>
         <Key ID="STR_NOTIFICATION_SECTORCAPTURED_TEXT">
             <Original>Our forces have captured %1.</Original>
             <French>Nos forces ont capturé %1.</French>

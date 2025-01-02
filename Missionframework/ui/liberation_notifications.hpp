@@ -191,4 +191,11 @@ class CfgNotifications {
         color[] = {0, 0.5, 0, 1};
         sound = "taskUpdated";
     };
+    class lib_civilian_killed: lib_default_notification {
+        title = $STR_NOTIFICATION_CIVILIANKILLED_TITLE;
+        description = $STR_CR_KILLMSG;
+        iconPicture = "\A3\ui_f\data\gui\cfg\Debriefing\endDefault_ca.paa";
+        color[] = { 0.75, 0, 0, 1 };
+        sound = "taskFailed";
+    };
 };
