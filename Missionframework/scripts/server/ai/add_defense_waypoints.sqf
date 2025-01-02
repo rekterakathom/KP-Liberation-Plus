@@ -30,16 +30,20 @@ if (_is_infantry) then {
 
     _waypoint = _grp addWaypoint [_wpPositions select 1, 10];
     _waypoint setWaypointType "MOVE";
+    _waypoint setWaypointCompletionRadius 10;
     _waypoint setWaypointTimeout [3, 6, 9];
     _waypoint = _grp addWaypoint [_wpPositions select 2, 10];
     _waypoint setWaypointType "MOVE";
+    _waypoint setWaypointCompletionRadius 10;
     _waypoint setWaypointTimeout [3, 6, 9];
     _waypoint = _grp addWaypoint [_wpPositions select 3, 10];
     _waypoint setWaypointType "MOVE";
+    _waypoint setWaypointCompletionRadius 10;
     _waypoint setWaypointTimeout [3, 6, 9];
 
     _waypoint = _grp addWaypoint [_wpPositions select 4, 10];
     _waypoint setWaypointType "CYCLE";
+    _waypoint setWaypointCompletionRadius 10;
     _waypoint setWaypointTimeout [3, 6, 9];
 } else {
     _waypoint = _grp addWaypoint [_basepos, 1];
@@ -69,22 +73,51 @@ if ({alive _x} count (units _grp) > 0) then {
         _basepos getPos [random [50, 100, 150], random [216, 252, 288]],
         _basepos getPos [random [50, 100, 150], random [288, 324, 360]]
     ];
+
+    private _nearestEnemy = ((leader _grp) findNearestEnemy (leader _grp));
+    if !(isNull _nearestEnemy) then {
+        _waypoint = _grp addWaypoint [(leader _grp) getHideFrom _nearestEnemy, 10];
+        _waypoint setWaypointType "SAD";
+        _waypoint setWaypointBehaviour "COMBAT";
+        _waypoint setWaypointCombatMode "YELLOW";
+        _waypoint setWaypointCompletionRadius 20;
+        _waypoint setWaypointTimeout [60, 120, 180]; // Remain here for some time because the enemies were here
+        if (_is_infantry) then {
+            _waypoint setWaypointSpeed "NORMAL";
+        } else {
+            _waypoint setWaypointSpeed "LIMITED";
+        };
+    };
+
     _waypoint = _grp addWaypoint [_wpPositions select 0, 10];
     _waypoint setWaypointType "SAD";
     _waypoint setWaypointBehaviour "COMBAT";
     _waypoint setWaypointCombatMode "YELLOW";
+    _waypoint setWaypointCompletionRadius 20;
+    _waypoint setWaypointTimeout [3, 6, 9];
     if (_is_infantry) then {
         _waypoint setWaypointSpeed "NORMAL";
     } else {
         _waypoint setWaypointSpeed "LIMITED";
     };
+
     _waypoint = _grp addWaypoint [_wpPositions select 1, 10];
     _waypoint setWaypointType "SAD";
+    _waypoint setWaypointCompletionRadius 20;
+    _waypoint setWaypointTimeout [3, 6, 9];
+
     _waypoint = _grp addWaypoint [_wpPositions select 2, 10];
     _waypoint setWaypointType "SAD";
+    _waypoint setWaypointCompletionRadius 20;
+    _waypoint setWaypointTimeout [3, 6, 9];
+
     _waypoint = _grp addWaypoint [_wpPositions select 3, 10];
     _waypoint setWaypointType "SAD";
+    _waypoint setWaypointCompletionRadius 20;
+    _waypoint setWaypointTimeout [3, 6, 9];
+
     _waypoint = _grp addWaypoint [_wpPositions select 4, 10];
     _waypoint setWaypointType "CYCLE";
+    _waypoint setWaypointCompletionRadius 20;
     _grp setCurrentWaypoint [_grp, 0];
 };
